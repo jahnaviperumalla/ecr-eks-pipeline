@@ -17,7 +17,7 @@ spec:
         - name: back-end
           image: 882956824445.dkr.ecr.us-west-2.amazonaws.com/harish-cicd-pipeline:latest
           ports:
-            - containerPort: 90
+            - containerPort: 80
 
 
 ---
@@ -33,4 +33,4 @@ spec:
   ports:
     - nodePort: 31479
       port: 8080
-      targetPort: 90
+      targetPort: 80
